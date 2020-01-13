@@ -2,7 +2,7 @@ class Patient
 
   attr_accessor :name
 
-  @@all = [] 
+  @@all = []
 
   def initialize(name)
     @name = name
@@ -22,7 +22,7 @@ class Patient
   end
 
   def doctors
-    appointments.map { |appt| appt.doctor }
+    appointments.map { |appt| appt.patient }
   end
 
 end
