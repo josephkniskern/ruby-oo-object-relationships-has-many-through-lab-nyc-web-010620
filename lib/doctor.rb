@@ -21,14 +21,13 @@ class Doctor
 
   def appointments
     Appointment.all.select do  |appointment|
-      binding.pry
       appointment.doctor == self
     end
   end
 
   def patients
     appointments.map do |appt|
-
+      binding.pry
       appt.date
       # binding.pry
     end
