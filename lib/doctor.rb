@@ -29,7 +29,6 @@ class Doctor
     appointments.map do |appt|
       binding.pry
       appt.date
-      # binding.pry
     end
   end
 
