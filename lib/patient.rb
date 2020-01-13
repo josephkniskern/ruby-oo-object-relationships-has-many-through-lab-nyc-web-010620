@@ -21,7 +21,7 @@ class Patient
 
   def appointments
     Appointment.all.select do |appointment|
-      appointment.patient == self
+      appointment.date == self
       binding.pry
     end
   end
